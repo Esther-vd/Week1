@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13, 71, 13);
+    font-size: medium;
+    padding: 2rem;
+    background-color: rgba(153, 205, 50, 0.884);
+    line-height: 110%;
+}
+main{
+    max-width: 1440px;
+    display: grid;
+    justify-content: center;
+}
+p{
+     max-width: 60ch;
+}
+
+h1{
+    font-size: large;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+h2{
+    font-weight: 800;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+p+p{
+    margin-top: 1rem;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin: .5rem 0rem;
+}
+
+ol, ul{
+    list-style-position:outside;
+    padding: 1rem 0rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+li{
+    padding: .5rem;
+}
+
+ol ::marker {
+	content: counter(list-item) ' ';
+    font-weight: 900;
+}
+
+ul ::marker{
+    content: '+' ' ';
+    font-weight: 900;
+}
+
+em{
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px){
+    .double-column{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+}
