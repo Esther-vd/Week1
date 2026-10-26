@@ -1,0 +1,32 @@
+body{
+    background-color: #FAFAFA;
+    color: #1E1E1E;
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    padding: 1rem;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+p{
+    max-width: 80ch;
+}
+
+.article__Intro{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: serif;
+}
