@@ -45,6 +45,10 @@ a:hover {
   text-decoration: underline;
 }
 
+span{
+    font-style: italic;
+}
+
 #banner {
   background-color: #0b3d91;
   color: rgb(243, 243, 243);
@@ -77,3 +81,17 @@ footer a {
   text-transform: uppercase;
   text-decoration: underline;
 }
+
+article:first-of-type p:first-of-type{
+    color: green;
+}
+
+/* 
+De tekstkleur van de paragraaf is rood omdat dit later in de css file wordt verklaart. 
+Css staat voor cascading style sheet, wat betekent dat het van boven naar onder de file leest,
+het gaat eerst het eerste statement lezen en de paragraaf groen maken maar daarna leest het dan het tweede statement
+en maakt het de paragraaf rood. Wat als laatste vermeld wordt is wat uitendelijkg geld.
+*/
+article:first-of-type p:first-of-type{
+    color: red;
+} 
